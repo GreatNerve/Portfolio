@@ -1,6 +1,6 @@
 import Footer from "./Footer/Footer";
 import NavBar from "./Header/Navbar";
-import Hero from "./Hero/Index";
+import Hero from "./Hero/Hero";
 import ListItem from "./Includes/ListItem";
 import Logo from "./Includes/Logo";
 import SuspenseImage from "./Includes/Image";

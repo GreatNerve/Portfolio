@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "name": "Wikipedia Summary",
+      "image": "https://i.ibb.co/6ZFPBGS/wikipidia.png",
+      "summary": "Built a Wikipedia-like platform for exploring topics with summaries, search suggestions & responsive design.",
+      "description": "This jQuery-based platform, inspired by Wikipedia, offers concise article summaries and dropdown search suggestions for efficient exploration. Leveraging the Wikipedia API ensures relevant suggestions, enhancing the user experience. Fully responsive across devices, it prioritizes accessibility and usability for seamless information discovery.",
+      "techStack": [
+        "jQuery",
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "status": "Completed",
+      "live": "https://www.wikipedia.greatnerve.com/",
+      "git": "https://github.com/GreatNerve/Wikipedia",
+      "slug": "wikipedia-clone"
+    },
+    {
+      "name": "NSUT IIF Website",
+      "image": "https://i.ibb.co/SN8qLwn/Screenshot-2024-04-06-233138.png",
+      "summary": "Built a website for NSUT IIF integrating frontend and backend modern technologies.like  Node.js, Express, MongoDB.",
+      "description": "I contributed to the NSUT IIF Website, leveraging modern technologies like Node.js, Express, and MongoDB. Our collaboration yielded a dynamic, responsive platform showcasing the institute's offerings. With Node.js and Express, we ensured swift server-side operations and seamless routing. MongoDB facilitated efficient data management, enhancing performance. The result is a user-friendly website, empowering visitors with easy access to relevant information about NSUT IIF.",
+      "techStack": [
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "status": "Ongoing",
+      "live": "https://nsutiif.in/",
+      "slug": "NSUT-IIF-Website"
+    },
+    {
+      "name": "Mars Image Search",
+      "live": "https://greatnerve.github.io/Mars_Image/",
+      "image": "https://i.ibb.co/2q81fX6/Screenshot-2024-04-07-001853.png",
+      "summary": "Built a Mars image search platform with a responsive design, image grid, and image modal.",
+      "description": "Developed a Mars image search platform with a responsive design, image grid, and image modal. Leveraging the NASA API, the platform offers a seamless user experience, enabling users to explore Mars images with ease. The responsive design ensures optimal performance across devices, enhancing accessibility. The image grid and modal facilitate efficient image browsing, empowering users with a visually engaging experience.",
+      "techStack": [
+        "JQuery",
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "status": "Completed",
+      "git": "https://github.com/GreatNerve/Mars_Image",
+      "slug": "mars-image-search"
+    },
+    {
+      "name": "Robotics & Electronics",
+      "git": "https://github.com/GreatNerve/Nerve_V1",
+      "image": "https://raw.githubusercontent.com/GreatNerve/Nerve_V1/main/Nerve.jpg",
+      "summary": "Built many project of Robotics and Electronics. including domain like IOT, Embedded System, Automation.",
+      "description": "I have worked on various Robotics and Electronics projects, including domains like IoT, Embedded Systems, and Automation. My contributions span a wide range of projects, each designed to address unique challenges and deliver innovative solutions. Leveraging my expertise in electronics and robotics, I have developed projects that showcase my technical skills and creativity. My projects are a testament to my passion for technology and my commitment to excellence.",
+      "techStack": [
+        "Arduino",
+        "Raspberry Pi",
+        "IoT",
+        "Embedded Systems"
+      ],
+      "status": "Completed",
+      "slug": "robotics-electronics"
+    }
+  ]
+}

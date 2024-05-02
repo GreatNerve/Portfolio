@@ -2,7 +2,21 @@
 
 import { ReactNode } from "react";
 import NextUIProvider from "./NextUI";
+import { StoreProvider } from "./StoreProvider";
+import { ThemeProvider } from "./theme-provider";
 
 export default function Providers({ children }: { children: ReactNode }) {
-  return <NextUIProvider>{children}</NextUIProvider>;
+  return (
+    <NextUIProvider>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="dark"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <StoreProvider>{children}</StoreProvider>
+      </ThemeProvider>
+    </NextUIProvider>
+  );
 }
+

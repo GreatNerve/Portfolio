@@ -3,8 +3,8 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import { FC } from "react";
-
-// import {Link} from "next/link";
+import { Logo } from "@/components";
+import Link from "next/link";
 
 const Footer: FC = () => {
   return (
@@ -12,19 +12,18 @@ const Footer: FC = () => {
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div className="flex justify-center text-gray-600 sm:justify-start dark:text-gray-300">
-              {/* <Link to="/">
+            <div className="flex justify-center sm:justify-start">
+              <Link href="/">
                 <Logo size="h-16 w-24" className="block m-0 text-md" />
-              </Link> */}
-              <div className="w-24 h-16 bg-gray-400 rounded-xl uppercase text-2xl flex justify-center items-center text-slate-800">
-                <span>Logo</span>
-              </div>
+              </Link>
             </div>
 
-            <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left dark:text-gray-400">
-              Dedicated to provide best services. We are a team of talented
-              individuals who are passionate about what we do.
-            </p>
+            <div className="flex justify-center sm:justify-start">
+              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left dark:text-gray-400">
+                Dedicated to provide best services. We are a team of talented
+                individuals who are passionate about what we do.
+              </p>
+            </div>
 
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
               <li>

@@ -3,13 +3,15 @@ import { FC } from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "404 | Not Found",
+  title: {
+    absolute: "404 | Not Found",
+  },  
   description: "The page you requested could not be found.",
 };
 
 const Error404: FC = () => {
   return (
-    <div className="grid h-screen place-content-center bg-background px-4 ">
+    <div className="grid h-[90vh] place-content-center bg-background px-4 ">
       <div className="text-center">
         <h1 className="text-9xl font-black text-gray-200 dark:text-gray-700">
           404

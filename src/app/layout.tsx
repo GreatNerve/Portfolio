@@ -1,14 +1,20 @@
+import { Footer, NavBar } from "@/components";
+import { Toaster } from "@/components/ui/toaster";
+import Providers from "@/Providers";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Footer } from "@/components";
-import Providers from "@/Providers";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dheeraj Sharma | Developer",
+  title: {
+    default: "Dheeraj Sharma | GreatNerve",
+    template: "%s | Dheeraj Sharma",
+  },
   description: "Hi, I'm Dheeraj Sharma, a Full Stack Developer.",
+  keywords: "Dheeraj Sharma, Web Development, Software Development, Full Stack Development",
 };
 
 export default function RootLayout({
@@ -16,12 +22,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" className="dark">
+ return (
+    <html lang="en" suppressHydrationWarning>
+      
       <body className={inter.className}>
         <Providers>
-          {children}
+          <NavBar />
+          <main className=" my-0 min-h-screen">
+            {children}
+          </main>
           <Footer />
+          <Toaster />
         </Providers>
       </body>
     </html>

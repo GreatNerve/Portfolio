@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "title": "Web Development",
+      "to": "/services#WebDevelopment",
+      "description": "We build websites and web applications that are fast, secure, and scalable."
+    },
+    {
+      "title": "App Development",
+      "to": "/services#AppDevelopment",
+      "description": " We build mobile applications that are fast, secure, and scalable."
+    }
+  ]
+}

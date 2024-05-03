@@ -45,7 +45,7 @@ const index: FC = () => {
         <Button
           as={Link}
           className="rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring"
-          href="/project"
+          href="/projects"
         >
           Projects
         </Button>

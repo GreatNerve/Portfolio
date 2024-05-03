@@ -33,7 +33,7 @@ const components = useAppSelector((state) => state.project.data);
                         <ListItem
                             key={`NavItem-${component.slug}-${component.name}`}
                             title={component.name}
-                            to={`/project#${component.slug}`}
+                            to={`/projects#${component.slug}`}
                         >
                             {component?.summary ? component?.summary : component?.description}
                         </ListItem>

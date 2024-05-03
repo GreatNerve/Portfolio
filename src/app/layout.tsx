@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     },
     description: description,
     type: 'website',
+    url: BASE_URL,
     images: [
       {
         url: logo_abs,
@@ -64,6 +65,8 @@ export const metadata: Metadata = {
     images : {
       url: logo_abs,
       alt: name,
+      height: 256,
+      width: 256,
     }
   },
   }

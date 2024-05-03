@@ -1,11 +1,10 @@
 import { Logo } from "@/components";
-// import { Button, Link as BtnLink } from "@nextui-org/react";
-import {Link as BtnLink } from "@nextui-org/link";
 import { Button } from "@nextui-org/button";
+import { Link as BtnLink } from "@nextui-org/link";
+import Link from "next/link";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
-import Link from "next/link";
 const index: FC = () => {
   return (
     <div className="flex flex-col items-center justify-center space-y-4 container h-[80vh]">

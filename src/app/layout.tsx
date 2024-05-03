@@ -1,4 +1,4 @@
-import { Footer, NavBar } from "@/components";
+import { NavBar } from "@/components";
 import { Toaster } from "@/components/ui/toaster";
 import { name, theme_color } from '@/lib/constants';
 import { templateMetadata } from "@/lib/templateMetadata";
@@ -6,6 +6,9 @@ import Providers from "@/Providers";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import dynamic from "next/dynamic";
+
+const Footer = dynamic(() => import("@/components/Footer/Footer"))
 
 
 const inter = Inter({ subsets: ["latin"] });

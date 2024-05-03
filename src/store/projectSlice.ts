@@ -1,5 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
 import initialState from "@/Data/Projects.json";
+import { createSlice } from "@reduxjs/toolkit";
 
 export interface projectType {
   name: string;

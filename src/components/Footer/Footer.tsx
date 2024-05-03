@@ -1,10 +1,10 @@
+import { Logo } from "@/components";
+import Link from "next/link";
+import { FC } from "react";
 import { BiSolidPhone } from "react-icons/bi";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
-import { FC } from "react";
-import { Logo } from "@/components";
-import Link from "next/link";
 
 const Footer: FC = () => {
   return (
@@ -262,7 +262,7 @@ const Footer: FC = () => {
               <span className="block sm:inline">All rights reserved.</span>
 
               <a
-                className="mx-1 inline-block text-gray-600 underline transition hover:text-gray-600/75 dark:text-gray-500 dark:hover:text-gray-500/75"
+                className="mx-1 inline-block text-gray-600 underline transition hover:text-gray-600/75 dark:text-gray-400 dark:hover:text-gray-400/75"
                 href="#"
               >
                 Terms & Conditions
@@ -271,7 +271,7 @@ const Footer: FC = () => {
               <span className="mx-1 ">&middot;</span>
 
               <a
-                className="inline-block text-gray-600 underline transition hover:text-gray-600/75 dark:text-gray-500 dark:hover:text-gray-500/75"
+                className="inline-block text-gray-600 underline transition hover:text-gray-600/75 dark:text-gray-400 dark:hover:text-gray-400/75"
                 href="#"
               >
                 Privacy Policy

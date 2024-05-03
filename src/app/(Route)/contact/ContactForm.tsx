@@ -4,8 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm, useFormState } from "react-hook-form"
 import { z } from "zod"
 
-import { saveContactForm } from "@/app/api/action"
-import { Button } from "@nextui-org/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Form,
@@ -19,8 +17,8 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
+import { Button } from "@nextui-org/button"
 
-import { Loader2 } from "lucide-react"
 
 const FormSchema = z.object({
   name : z.string().trim().min(1, "Name is required").min(3, "Name is too short").max(50, "Name is too long"),
@@ -45,6 +43,7 @@ export function ContactForm() {
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
+      const { saveContactForm } = await import("@/app/api/action");
       const {message, error}:{
         message?: string;
         error?: string;      
@@ -149,13 +148,10 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button color="primary" type="submit" radius="sm" isDisabled={pending}>
+        <Button color="primary" type="submit" radius="sm" isDisabled={pending} isLoading={pending}>
       {
         pending ? (
-          <>
-          <Loader2 className="w-6 h-6 animate-spin me-1" />
-            Submitting....
-          </>
+            "Submitting...."
         ) : (
           "Submit"
         )

@@ -1,5 +1,4 @@
 
-import { projectType } from "@/store/projectSlice";
 import ItemCard from "./ItemCard";
 const Box = ({name="BoxBox", data }:
   {

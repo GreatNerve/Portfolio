@@ -1,10 +1,8 @@
 
-import {Button} from "@nextui-org/button";
-import Image from "next/image";
-import { ContactForm } from "./ContactForm";
-import { Metadata } from "next";
-import SideImage from "./SideImage";
 import { templateMetadata } from "@/lib/templateMetadata";
+import { Metadata } from "next";
+import { ContactForm } from "./ContactForm";
+import SideImage from "./SideImage";
 
 export const metadata: Metadata = {
   ...templateMetadata,
@@ -38,9 +36,6 @@ export default function Contact() {
         <div className="mx-auto grid w-[350px] gap-6">
           <div className="grid gap-2 text-center">
             <h1 className="text-3xl font-bold">Contact</h1>
-            {/* <p className="text-balance text-muted-foreground">
-              Please enter your details, we will contact you shortly.
-            </p> */}
           </div>
           <ContactForm />
         </div>

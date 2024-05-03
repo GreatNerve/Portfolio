@@ -95,43 +95,46 @@ const NavBar = () => {
               <Logo size="h-8 w-12" />
             </Link>
           </NavigationMenuItem>
-          <div
+
+          <li
             className={cn(
-              "bg-background absolute top-[50px] -inset-x-4 z-2 h-auto pb-1 md:p-0 md:flex md:static md:min-h-fit md:flex-grow shadow-md shadow-border md:shadow-none md:bg-transparent md:rounded-none rounded-b-md md:items-center",
+              "bg-background absolute top-[50px] -inset-x-4 z-2 h-auto pb-1 flex-grow md:p-0 md:static md:flex shadow-md shadow-border md:shadow-none md:bg-transparent md:rounded-none rounded-b-md",
               isMenuOpen ? "" : "hidden"
             )}
           >
-            <NavigationMenuItem className=" mx-4 md:mx-1 my-4 md:my-1">
-              <ServiceNavItems ref={servicesRef} name="Services" />
-            </NavigationMenuItem>
+            <ul className=" md:flex md:static md:flex-grow md:items-center md:justify-start">
+              <NavigationMenuItem className=" mx-4 md:mx-1 my-4 md:my-1">
+                <ServiceNavItems ref={servicesRef} name="Services" />
+              </NavigationMenuItem>
 
-            <NavigationMenuItem className=" mx-4 md:mx-1 my-4 md:my-1">
-              <ProjectNavItems ref={projectsRef} name="Projects" />
-            </NavigationMenuItem>
+              <NavigationMenuItem className=" mx-4 md:mx-1 my-4 md:my-1">
+                <ProjectNavItems ref={projectsRef} name="Projects" />
+              </NavigationMenuItem>
 
-            <NavigationMenuItem className=" mx-4 my-4 md:my-1 md:mx-1">
-              <Link
-                href="/about"
-                className={cn(
-                  navigationMenuTriggerStyle(),
-                  "w-full text-lg md:text-base font-medium"
-                )}
-              >
-                About
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem className="mx-4 my-4 md:my-1 md:mx-1">
-              <Link
-                href="/contact"
-                className={cn(
-                  navigationMenuTriggerStyle(),
-                  "w-full text-lg md:text-base font-medium"
-                )}
-              >
-                Contact Us
-              </Link>
-            </NavigationMenuItem>
-          </div>
+              <NavigationMenuItem className=" mx-4 my-4 md:my-1 md:mx-1">
+                <Link
+                  href="/about"
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    "w-full text-lg md:text-base font-medium"
+                  )}
+                >
+                  About
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem className="mx-4 my-4 md:my-1 md:mx-1">
+                <Link
+                  href="/contact"
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    "w-full text-lg md:text-base font-medium"
+                  )}
+                >
+                  Contact Us
+                </Link>
+              </NavigationMenuItem>
+            </ul>
+          </li>
           <NavigationMenuItem className="">
             <ThemeButton />
           </NavigationMenuItem>

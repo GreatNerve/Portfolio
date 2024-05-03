@@ -1,5 +1,5 @@
 "use client";
-import { ItemCard } from '@/components'
+import { ItemCard } from '@/components';
 import { useAppSelector } from '@/lib/hooks';
 
 function ProjectList() {

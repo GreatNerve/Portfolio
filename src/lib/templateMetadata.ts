@@ -1,5 +1,5 @@
+import { BASE_URL, description, keywords, logo, name, og_image, short_name, theme_color } from '@/lib/constants';
 import { Metadata } from "next";
-import {name, short_name, description, theme_color,BASE_URL,logo,keywords, og_image} from '@/lib/constants'
 
 
 export const templateMetadata: Metadata = {

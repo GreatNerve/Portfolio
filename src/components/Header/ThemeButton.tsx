@@ -5,10 +5,9 @@ import { Button } from "@nextui-org/button";
 
 import {
   Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownSection,
   DropdownItem,
+  DropdownMenu,
+  DropdownTrigger
 } from "@nextui-org/dropdown";
 
 export function ModeToggle() {
@@ -36,7 +35,7 @@ export function ModeToggle() {
         }}
         disallowEmptySelection
         selectionMode="single"
-        selectedKeys={new Set(theme)}
+        selectedKeys={new Set([theme!])}
         onSelectionChange={(selectedKeys) => {
           setTheme(Array.from(selectedKeys)[0] as string);
           

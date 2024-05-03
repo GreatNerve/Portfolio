@@ -1,9 +1,5 @@
 "use server";
 
-import Contact from "@/db/Models/contactModel";
-import { dbConnect } from "@/lib/dbConfig";
-
-
 export const saveContactForm = async ({
   name,
   email,
@@ -19,9 +15,11 @@ export const saveContactForm = async ({
     throw new Error("Please fill all the fields.");
   }
   try {
+    const { dbConnect } = await import("@/lib/dbConfig");
     await dbConnect();
-    const contact = new Contact({ name, email, message });
-    await contact.save();
+    const Contact  = await (await import("@/db/Models/contactModel")).default;
+    const saveContact = new Contact({ name, email, message });
+    await saveContact.save();
     return {
       message: "Contact form saved successfully",
     };

@@ -1,6 +1,4 @@
 import { LinkWrapper, SuspenseImage } from "..";
-import PropTypes from "prop-types";
-import { Image } from "@nextui-org/react";
 const Card = ({
   name,
   description,

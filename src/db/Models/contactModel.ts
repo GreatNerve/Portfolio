@@ -1,7 +1,12 @@
+import mongoose, { Schema, Document } from "mongoose";
 
-import mongoose from "mongoose";
+export interface IContact extends Document {
+  name: string;
+  email: string;
+  message: string;
+}
 
-const contactSchema = new mongoose.Schema(
+const contactSchema: Schema<IContact> = new mongoose.Schema(
   {
     name: {
       type: String,
@@ -11,7 +16,7 @@ const contactSchema = new mongoose.Schema(
     email: {
       type: String,
       required: [true, "Email is required"],
-      match: [/.+\@.+\..+/, 'Please use a valid email address'],
+      match: [/.+\@.+\..+/, "Please use a valid email address"],
     },
     message: {
       type: String,
@@ -25,6 +30,7 @@ const contactSchema = new mongoose.Schema(
 );
 
 const Contact =
-  mongoose.models.Contact || mongoose.model("Contact", contactSchema);
+  (mongoose.models.Contact as mongoose.Model<IContact>) ||
+  mongoose.model<IContact>("Contact", contactSchema);
 
-  export default Contact;
+export default Contact;

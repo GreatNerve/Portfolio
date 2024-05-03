@@ -5,7 +5,7 @@ import { useForm, useFormState } from "react-hook-form"
 import { z } from "zod"
 
 import { saveContactForm } from "@/app/api/action"
-import { Button } from "@/components/ui/button"
+import { Button } from "@nextui-org/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Form,
@@ -76,7 +76,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="mt-4 grid gap-3" method="post">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="mt-0 grid gap-3" method="post">
         <FormField
           control={form.control}
           name="name"
@@ -149,7 +149,7 @@ export function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" disabled={pending}>
+        <Button color="primary" type="submit" radius="sm" isDisabled={pending}>
       {
         pending ? (
           <>

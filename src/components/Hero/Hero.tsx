@@ -1,5 +1,7 @@
 import { Logo } from "@/components";
-import { Button, Link as BtnLink } from "@nextui-org/react";
+// import { Button, Link as BtnLink } from "@nextui-org/react";
+import {Link as BtnLink } from "@nextui-org/link";
+import { Button } from "@nextui-org/button";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";

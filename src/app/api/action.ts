@@ -8,7 +8,7 @@ export const saveContactForm = async ({
   name,
   email,
   message,
-  tnc,
+  tnc
 }: {
   name: string;
   email: string;

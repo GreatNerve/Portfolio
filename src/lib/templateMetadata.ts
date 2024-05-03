@@ -73,7 +73,7 @@ export const templateMetadata: Metadata = {
       {
         rel: "mask-icon",
         color: theme_color,
-        url: "/assets/logo/safari-pinned-tab.svg",
+        url: logo,
       },  
       ]
     },

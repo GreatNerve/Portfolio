@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import type { Viewport } from 'next'
-import {name, short_name, description, theme_color,BASE_URL,logo,logo_abs,keywords} from '@/lib/constants'
+import {name, short_name, description, theme_color,BASE_URL,logo,logo_abs,keywords, og_image} from '@/lib/constants'
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,7 +44,7 @@ export const templateMetadata: Metadata = {
     url: BASE_URL,
     images: [
       {
-        url: logo_abs,
+        url: og_image,
         width: 256,
         height: 256,
         alt: name,
@@ -60,7 +60,7 @@ export const templateMetadata: Metadata = {
     description: description,
     creator: "@GreatNerve",
     images : {
-      url: logo_abs,
+      url: og_image,
       alt: name,
       height: 256,
       width: 256,

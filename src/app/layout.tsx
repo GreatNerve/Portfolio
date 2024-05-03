@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import type { Viewport } from 'next'
-import {name, short_name, description, theme_color,BASE_URL,logo,logo_abs,keywords, og_image} from '@/lib/constants'
+import {name, short_name, description, theme_color,BASE_URL,logo,keywords, og_image} from '@/lib/constants'
 
 
 const inter = Inter({ subsets: ["latin"] });

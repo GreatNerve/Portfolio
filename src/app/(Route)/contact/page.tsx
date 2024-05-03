@@ -8,7 +8,15 @@ import SideImage from "./SideImage";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact me for any queries or collaborations.",
-  keywords: "Contact, Dheeraj Sharma, Web Development, Software Development, Full Stack Development",
+  keywords: "Contact, Dheeraj Sharma, Web Development, Software Development, Full Stack Development, GreatNerve, Dherraj Sharma, Engineering, NSUT, Delhi, India, React, Next.js, TailwindCSS, TypeScript, Python, Rust, Git, AWS, Firebase, SQL, NoSQL, MongoDB, PostgreSQL, MySQL, SQLite, Docker, Kubernetes, Linux, Windows, MacOS, Android, iOS, Flutter, Dart, C, C++, Java, JavaScript, TypeScript, HTML, CSS, SCSS, SASS, Web Development, Software Development, Full Stack Development, Competitive Programming, Data Structures, Algorithms, Problem Solving, Open Source, Open Source Contribution, Projects, Portfolio, Blog, Blogging, Technical Blog, Technology, Web Development, Software Development, Full Stack Development, Competitive Programming, Data Structures, Algorithms, Problem Solving, Open Source, Open Source Contribution, Projects, Portfolio, Blog, Blogging, Technical Blog",
+  openGraph: {
+    title: "Contact",
+    description: "Contact me for any queries or collaborations.",
+  },
+  twitter: {
+    title: "Contact",
+    description: "Contact me for any queries or collaborations.",
+  },
 };
 
 

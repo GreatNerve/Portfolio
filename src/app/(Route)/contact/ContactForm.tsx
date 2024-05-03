@@ -20,7 +20,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
 
-
+import { Loader2 } from "lucide-react"
 
 const FormSchema = z.object({
   name : z.string().trim().min(1, "Name is required").min(3, "Name is too short").max(50, "Name is too long"),
@@ -150,7 +150,16 @@ export function ContactForm() {
           )}
         />
         <Button type="submit" disabled={pending}>
-      {pending ? "Submitting..." : "Submit"}
+      {
+        pending ? (
+          <>
+          <Loader2 className="w-6 h-6 animate-spin me-1" />
+            Submitting....
+          </>
+        ) : (
+          "Submit"
+        )
+      }
     </Button>
       </form>
     </Form>    

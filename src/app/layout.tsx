@@ -4,18 +4,69 @@ import Providers from "@/Providers";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import type { Viewport } from 'next'
+import {name, short_name, description, theme_color,BASE_URL,logo,logo_abs,keywords} from '@/lib/constants'
 
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  themeColor: theme_color,
+}
+
 export const metadata: Metadata = {
   title: {
-    default: "Dheeraj Sharma | GreatNerve",
+    default: name,
     template: "%s | Dheeraj Sharma",
   },
-  description: "Hi, I'm Dheeraj Sharma, a Full Stack Developer.",
-  keywords: "Dheeraj Sharma, Web Development, Software Development, Full Stack Development",
-};
+  description: description,
+  keywords: keywords,
+  applicationName: name,
+  creator: short_name,
+  category: "Technology, Web Development",
+  metadataBase : BASE_URL,
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut : logo,
+    apple : logo,
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: logo,
+    }
+  },
+  openGraph: {
+    title: {
+      default: name,
+      template: "%s | Dheeraj Sharma",
+    },
+    description: description,
+    type: 'website',
+    images: [
+      {
+        url: logo_abs,
+        width: 256,
+        height: 256,
+        alt: name,
+      },
+    ],
+    },
+  twitter: {
+    card: "summary_large_image",
+    title: {
+      default: name,  
+      template: "%s | Dheeraj Sharma",
+    },
+    description: description,
+    creator: "@GreatNerve",
+    images : {
+      url: logo_abs,
+      alt: name,
+    }
+  },
+  }
 
 export default function RootLayout({
   children,

@@ -6,7 +6,19 @@ export const metadata: Metadata = {
   title: {
     absolute: "404 | Not Found",
   },  
-  description: "The page you requested could not be found.",
+  description: "The page you requested could not be found or we are working on it.",
+  openGraph: {
+    title: {
+      absolute: "404 | Not Found",
+    },
+    description: "The page you requested could not be found or we are working on it.",
+  },
+  twitter: {
+    title: {
+      absolute: "404 | Not Found",
+    },
+    description: "The page you requested could not be found or we are working on it.",
+  },
 };
 
 const Error404: FC = () => {

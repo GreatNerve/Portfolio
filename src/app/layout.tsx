@@ -14,11 +14,7 @@ export const viewport: Viewport = {
   themeColor: theme_color,
 }
 
-export const metadata: Metadata = {
-  title: {
-    default: name,
-    template: "%s | Dheeraj Sharma",
-  },
+export const templateMetadata: Metadata = {
   description: description,
   keywords: keywords,
   applicationName: name,
@@ -29,8 +25,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "assets/logo/favicon.ico",
     shortcut : logo,
+
     apple : logo,
     other: {
       rel: "apple-touch-icon-precomposed",
@@ -68,7 +65,17 @@ export const metadata: Metadata = {
       height: 256,
       width: 256,
     }
+  }
+}
+
+
+export const metadata: Metadata = {
+  title: {
+    default: name,
+    template: "%s | Dheeraj Sharma",
   },
+  ...templateMetadata,
+  
   }
 
 export default function RootLayout({

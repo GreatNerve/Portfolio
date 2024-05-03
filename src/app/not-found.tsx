@@ -1,19 +1,23 @@
 import Link from "next/link";
 import { FC } from "react";
 import { Metadata } from "next";
+import { templateMetadata } from "./layout";
 
 export const metadata: Metadata = {
+  ...templateMetadata,
   title: {
     absolute: "404 | Not Found",
   },  
   description: "The page you requested could not be found or we are working on it.",
   openGraph: {
+    ...templateMetadata.openGraph,
     title: {
       absolute: "404 | Not Found",
     },
     description: "The page you requested could not be found or we are working on it.",
   },
   twitter: {
+    ...templateMetadata.twitter,
     title: {
       absolute: "404 | Not Found",
     },

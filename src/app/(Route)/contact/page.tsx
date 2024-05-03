@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ContactForm } from "./ContactForm";
 import { Metadata } from "next";
 import SideImage from "./SideImage";
-import { templateMetadata } from "@/app/layout";
+import { templateMetadata } from "@/lib/templateMetadata";
 
 export const metadata: Metadata = {
   ...templateMetadata,

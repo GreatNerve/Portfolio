@@ -1,4 +1,5 @@
-import { templateMetadata } from "@/app/layout";
+
+import { templateMetadata } from "@/lib/templateMetadata";
 import ProjectList from "./ProjectList";
 
 import { Metadata } from "next";

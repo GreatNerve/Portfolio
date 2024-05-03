@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import { Metadata } from "next";
-import { templateMetadata } from "./layout";
+import { templateMetadata } from "@/lib/templateMetadata";
 
 export const metadata: Metadata = {
   ...templateMetadata,

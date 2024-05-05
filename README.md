@@ -8,4 +8,4 @@ This website is deployed on [greatnerve.com](https://greatnerve.com).
 
 <iframe src="https://greatnerve.com"
 style="width:100%; height:652px;"
- title="Great Nerve"></iframe>]
+ title="Great Nerve"></iframe>

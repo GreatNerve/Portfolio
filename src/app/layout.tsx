@@ -7,6 +7,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
+import { ReactNode } from "react";
 
 const Footer = dynamic(() => import("@/components/Footer/Footer"))
 
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
  return (
     <html lang="en" suppressHydrationWarning>

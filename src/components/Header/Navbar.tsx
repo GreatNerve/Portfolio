@@ -10,67 +10,24 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 import { Logo } from "@/components";
+import { Menu, X } from "lucide-react";
 import ProjectNavItems from "./ProjectNavItems";
 import ServiceNavItems from "./ServiceNavItems";
 import ThemeButton from "./ThemeButton";
+import { useNavbar } from "./useNavbar";
 
-import { Menu, X } from "lucide-react";
-
-import { usePathname } from "next/navigation";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { RefObject } from "react";
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+ 
+ 
 
-  const navRef = useRef<HTMLElement>(null);
-  const servicesRef = useRef<HTMLElement>(null);
-  const projectsRef = useRef<HTMLElement>(null);
-
-  const subMenuToggle = useCallback(function subMenuToggle(ref: any) {
-    if (ref && ref.getAttribute("aria-expanded") === "true") ref.click();
-  }, []);
-
-  const pathname = usePathname();
-  useEffect(() => {
-    setIsMenuOpen(false);
-    subMenuToggle(projectsRef.current);
-  }, [pathname, subMenuToggle]);
-
-  const handleMenuToggle = useCallback(
-    (action = "") => {
-      subMenuToggle(servicesRef.current!);
-      if (action === "close") return setIsMenuOpen(false);
-      setIsMenuOpen(!isMenuOpen);
-    },
-    [isMenuOpen, subMenuToggle, servicesRef]
-  );
-
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [isMenuOpen]);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (navRef.current && !navRef.current.contains(event.target as Node)) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  const { isMenuOpen,navRef, servicesRef, projectsRef, handleMenuToggle } = useNavbar();
 
   return (
     <div
       className="sticky top-0 z-50 bg-background text-foreground shadow-md shadow-border inset-x-0 py-2  border-b border-border/50 "
-      ref={navRef as React.RefObject<HTMLDivElement>}
+      ref={navRef as RefObject<HTMLDivElement>}
     >
       <NavigationMenu className="w-full max-w-[2400px] block px-4 md:px-8 mx-auto">
         <NavigationMenuList className="font-medium justify-between items-center">

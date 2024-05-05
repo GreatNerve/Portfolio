@@ -26,7 +26,7 @@ const Project = () => {
   
   return (
     <>
-      <h1 className="text-4xl font-bold text-center ">
+      <h1 className="my-6 text-4xl font-bold text-center ">
         Projects 
       </h1>
       <ProjectList />

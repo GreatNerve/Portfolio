@@ -7,6 +7,7 @@ import { FaInstagram, FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 
 const Footer: FC = () => {
+  
   return (
     <footer className="bg-white dark:bg-gray-900 border-border border-t-2">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">

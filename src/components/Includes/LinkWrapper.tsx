@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode, AnchorHTMLAttributes } from "react";
 
 interface LinkWrapperProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href?: string;

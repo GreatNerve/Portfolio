@@ -3,5 +3,6 @@
         "Dwarka",
         "nextui",
         "tailwindcss"
-    ]
+    ],
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }

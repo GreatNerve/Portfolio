@@ -2,6 +2,12 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "This is my portfolio website",
+  "homepage": "http://greatnerve.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GreatNerve/Portfolio"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,9 +17,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
     "@nextui-org/button": "^2.0.31",
-    "@nextui-org/checkbox": "^2.0.29",
     "@nextui-org/dropdown": "^2.1.23",
-    "@nextui-org/input": "^2.1.21",
     "@nextui-org/link": "^2.0.29",
     "@nextui-org/system": "^2.1.2",
     "@nextui-org/theme": "^2.2.3",
@@ -29,7 +33,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.28",
-    "lucide-react": "^0.367.0",
+    "lucide-react": "^0.378.0",
     "mongoose": "^8.3.3",
     "next": "14.1.4",
     "next-themes": "^0.3.0",

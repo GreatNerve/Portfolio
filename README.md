@@ -5,7 +5,3 @@ This is a portfolio website that I created using HTML, CSS, and JavaScript. It i
 ## Deployed Website
 
 This website is deployed on [greatnerve.com](https://greatnerve.com).
-
-<iframe src="https://greatnerve.com"
-style="width:100%; height:652px;"
- title="Great Nerve"></iframe>

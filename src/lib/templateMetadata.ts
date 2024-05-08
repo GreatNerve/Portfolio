@@ -15,61 +15,20 @@ export const templateMetadata: Metadata = {
     icons: {
       icon: [
         {
-          url: logo,
-          sizes: "48x48 96x96 144x144",
-          type: "image/svg+xml",
-        },
-        {
-          url: "/assets/logo/android-chrome-192x192.png",
-          type: "image/png",
-          sizes: "192x192",
-        },
-        {
-          url: "/assets/logo/android-chrome-512x512.png",
-          type: "image/png",
-          sizes: "512x512",
-        },
-        {
-          url: "/assets/logo/apple-touch-icon.png",
-          type: "image/png",
-          sizes: "180x180",
-        },
-        {
-          url: "/assets/logo/favicon-16x16.png",
-          type: "image/png",
+          url: "/assets/logo/favicon.ico",
+          type: "image/x-icon",
           sizes: "16x16",
         },
         {
-          url: "/assets/logo/favicon-24x24.png",
-          type: "image/png",
-          sizes: "24x24",
+          url: logo,
+          sizes: "any",
+          type: "image/svg+xml",
         },
-        {
-          url: "/assets/logo/favicon-32x32.png",
-          type: "image/png",
-          sizes: "32x32",
-        },
-        {
-          url: "/assets/logo/favicon-48x48.png",
-          type: "image/png",
-          sizes: "48x48",
-        },
-        {
-          url: "/assets/logo/mstile-150x150.png",
-          type: "image/png",
-          sizes: "150x150",
-        },
-        {
-          url: "/assets/logo/favicon.ico",
-          type: "image/x-icon",
-        },
+        
       ],
       shortcut : logo,
       apple : "assets/logo/apple-touch-icon.png",
-      other: [{
-        rel: "apple-touch-icon-precomposed",
-        url: "/assets/logo/apple-touch-icon.png",
-      },
+      other: [
       {
         rel: "mask-icon",
         color: theme_color,

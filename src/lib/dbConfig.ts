@@ -6,7 +6,7 @@ type ConnectionType = {
 
 const connection: ConnectionType = {};
 
-export async function dbConnect(): Promise<void> {
+export default async function dbConnect(): Promise<void> {
   if (connection.isConnected) {
     // console.log("Already connected to the database");
     return;

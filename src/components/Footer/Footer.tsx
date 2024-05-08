@@ -15,7 +15,7 @@ const Footer: FC = () => {
           <div>
             <div className="flex justify-center sm:justify-start">
               <Link href="/">
-                <Logo size="h-16 w-24" className="block m-0 text-md" />
+                <Logo className="h-16 w-24 block" />
               </Link>
             </div>
 
@@ -182,29 +182,29 @@ const Footer: FC = () => {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="#"
+                    href="/projects"
                   >
-                    Support
-                  </a>
+                    Projects
+                  </Link>
                 </li>
 
-                {/* <li>
-                  <a
-                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
+                <li className="group flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end sm:justify-start">
+                  <Link
+                    className=" flex gap-1.5 justify-center"
+                    href="/contact"
                   >
-                    <span className="text-gray-700 transition group-hover:text-gray-700/75 dark:text-white dark:hover:text-white/75">
-                      Live Chat
+                    <span className="text-gray-700 transition group-hover:text-gray-700/75 dark:text-white dark:hover:text-white/75 dark:group-hover:text-white/75">
+                    Support
                     </span>
 
                     <span className="relative flex h-2 w-2">
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gray-400 opacity-75"></span>
                       <span className="relative inline-flex size-2 rounded-full bg-gray-500"></span>
                     </span>
-                  </a>
-                </li> */}
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -214,7 +214,7 @@ const Footer: FC = () => {
               </p>
 
               <ul className="mt-8 space-y-4 text-sm">
-                <li>
+                <li className="">
                   <a
                     className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     href="mailto:support@greatnerve.com"

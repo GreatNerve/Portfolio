@@ -15,9 +15,9 @@ export const saveContactForm = async ({
     throw new Error("Please fill all the fields.");
   }
   try {
-    const { dbConnect } = await import("@/lib/dbConfig");
-    await dbConnect();
-    const Contact  = await (await import("@/db/Models/contactModel")).default;
+    const [dbConnect, Model] = await Promise.all([import("@/lib/dbConfig"), import("@/db/Models/contactModel")]);
+    await dbConnect.default();
+    const Contact = Model.default;
     const saveContact = new Contact({ name, email, message });
     await saveContact.save();
     return {

@@ -49,7 +49,7 @@ const NavBar = () => {
               href="/"
               className={cn(navigationMenuTriggerStyle(), "w-32 md:w-auto")}
             >
-              <Logo size="h-8 w-12" />
+              <Logo className="h-8 w-12" />
             </Link>
           </NavigationMenuItem>
 

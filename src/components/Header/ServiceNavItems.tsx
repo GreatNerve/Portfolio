@@ -41,7 +41,7 @@ const service = useAppSelector((state) => state.service.data);
                 )}
                 href="/service"
               >
-                <Logo size="size-full max-h-16" fontSize="text-2xl" />
+                <Logo className="size-full max-h-16" />
                 <div className="mb-1 mt-4 text-lg font-medium">
                   {name || "Services"}
                 </div>

@@ -8,7 +8,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-    "./node_modules/@nextui-org/theme/dist/components/(button|dropdown|link|ripple|spinner|menu|divider|popover).js"
+    "./node_modules/@nextui-org/theme/dist/components/(button|dropdown|link|ripple|spinner|menu|divider|popover|image).js"
   ],
   prefix: "",
   theme: {
@@ -54,6 +54,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        logo: "hsl(var(--logo))",
       },
       borderRadius: {
         lg: "var(--radius)",

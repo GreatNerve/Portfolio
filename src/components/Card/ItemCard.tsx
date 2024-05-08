@@ -1,5 +1,16 @@
 import { LinkWrapper, SuspenseImage } from "..";
-const Card = ({
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+
+const ItemCard = ({
   name,
   description,
   image,
@@ -19,9 +30,9 @@ const Card = ({
   slug? : string
 }) => {
   return (
-    <div
+    <Card
       id={slug}
-      className="shadow-sm shadow-border border-2 border-border items-start lg:items-center rounded-md gap-1 lg:gap-4 p-4 lg:p-6 bg-secondary flex flex-col lg:flex-row max-w-full lg:w-full lg:max-w-full lg:justify-center justify-start"
+      className="flex flex-col lg:flex-row gap-1 lg:gap-4 p-4 lg:p-6 items-start lg:items-center lg:justify-center justify-start hover:bg-indigo-600/5 hover:shadow-card-foreground  transition-shadow duration-300 ease-in-out"
     >
      
       <LinkWrapper
@@ -37,16 +48,20 @@ const Card = ({
         />
 
       </LinkWrapper>
-      <div >
-        <h2 className="text-3xl mt-4 font-bold mb-2 lg:my-0">{name}</h2>
-        <p className="text-justify">{description}</p>
-        <p className="my-1">
+      <div className="flex-1 w-full flex flex-col">
+        <CardHeader>
+        <CardTitle className="text-3xl mt-4 font-bold mb-2 lg:my-0">{name}</CardTitle>
+        <CardDescription className="text-justify font-normal text-base text-card-foreground">{description}</CardDescription>
+        </CardHeader>
+        <CardContent className="pb-1">
+        <p>
           Status{" : "}
           <span className=" font-semibold">{status}</span>
         </p>
-        <div className="w-full lg:flex lg:flex-wrap">
+        </CardContent>
+        <div className="flex-1 w-full flex flex-wrap">
           {techStack && techStack.length > 0 && (
-            <div className="flex items-center my-1 flex-wrap">
+            <CardContent className="flex items-center my-1 flex-wrap pb-2">
               <p className="break-words my-1">Tech Stack{" : "}</p>
               <div className="ms-1 my-1 flex gap-2 flex-wrap">
                 {techStack?.map((tech, index) => (
@@ -62,13 +77,13 @@ const Card = ({
                   </span>
                 ))}
               </div>
-            </div>
+            </CardContent>
           )}
-          <div className="me-0 lg:me-12 flex lg:justify-end flex-col text-center sm:flex-row lg:ms-auto">
+          <CardFooter className="p-0 w-full justify-center flex-1 me-0 lg:me-12 flex lg:justify-end flex-col text-center md:flex-row lg:ms-auto">
             {git && (
               <a
                 href={git}
-                className="w-full lg:w-auto bg-indigo-500 p-3 m-2 rounded-md text-white "
+                className="w-full lg:w-auto bg-indigo-600 hover:bg-indigo-700 p-3 m-2 rounded-md text-white "
                 target="_blank"
               >
                 View Code
@@ -77,17 +92,17 @@ const Card = ({
             {live && (
               <a
                 href={live}
-                className="w-full lg:w-auto bg-indigo-500 p-3 m-2 rounded-md text-white "
+                className="w-full lg:w-auto bg-indigo-600 hover:bg-indigo-700 p-3 m-2 rounded-md text-white "
                 target="_blank"
               >
                 View Project
               </a>
             )}
-          </div>
+          </CardFooter>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 
-export default Card;
+export default ItemCard;

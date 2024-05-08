@@ -18,6 +18,8 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
 import { Button } from "@nextui-org/button"
+import { HTMLAttributes } from "react"
+import { cn } from "@/lib/utils"
 
 
 const FormSchema = z.object({
@@ -27,7 +29,7 @@ const FormSchema = z.object({
   tnc : z.boolean().default(false).refine(value => value === true, { message: "Please agree to the terms and conditions" }),
 })
 
-export function ContactForm() {
+export function ContactForm(props : HTMLAttributes<HTMLFormElement>) {
   const { toast } = useToast()
 
 
@@ -54,8 +56,9 @@ export function ContactForm() {
           description: "Thank you for your response, we will get back to you soon.",
         })
         form.reset()
+        await new Promise(resolve => setTimeout(()=> (form.clearErrors()), 0))
       }
-      console.log(error)
+      // console.log(error)
       if (error) {
         toast({
           variant: "destructive",
@@ -75,7 +78,10 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="mt-0 grid gap-3" method="post">
+      <form onSubmit={form.handleSubmit(onSubmit)} className={cn(
+        "flex flex-col gap-4",
+        props?.className
+      )} method="post">
         <FormField
           control={form.control}
           name="name"
@@ -118,8 +124,7 @@ export function ContactForm() {
               </FormLabel>
               <FormControl>
                 <Textarea placeholder="Please enter your message here."
-                className="max-h-48"
-                rows={5}
+                className="h-44 sm:h-44 md:h-32 2xl:h-48 resize-none"
                 {...form.register("message")} />
               </FormControl>
               <FormMessage />

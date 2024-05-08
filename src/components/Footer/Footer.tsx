@@ -200,8 +200,8 @@ const Footer: FC = () => {
                     </span>
 
                     <span className="relative flex h-2 w-2">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gray-400 opacity-75"></span>
-                      <span className="relative inline-flex size-2 rounded-full bg-gray-500"></span>
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-indigo-500 opacity-75"></span>
+                      <span className="relative inline-flex size-2 rounded-full bg-indigo-700"></span>
                     </span>
                   </Link>
                 </li>

@@ -17,6 +17,7 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/components/ui/use-toast"
+import { BackgroundBeams } from "@/components/ui/background-beams"
 import { Button } from "@nextui-org/button"
 import { HTMLAttributes } from "react"
 import { cn } from "@/lib/utils"
@@ -78,10 +79,13 @@ export function ContactForm(props : HTMLAttributes<HTMLFormElement>) {
 
   return (
     <Form {...form}>
+      <BackgroundBeams />
       <form onSubmit={form.handleSubmit(onSubmit)} className={cn(
-        "flex flex-col gap-4",
+        "flex flex-col gap-4 relative z-10",
         props?.className
-      )} method="post">
+      )} method="post"
+      noValidate
+      >
         <FormField
           control={form.control}
           name="name"

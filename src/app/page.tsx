@@ -3,18 +3,23 @@ import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function Home() {
   return (
     <>
-    <section className="container flex gap-2 flex-col items-center justify-center flex-1  min-h-[calc(100vh-4rem-1px)]">
+    <section className="container flex gap-2 flex-col items-center justify-center flex-1  min-h-[calc(100vh-4rem-1px)] overflow-hidden relative">
+    <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fillClass=" fill-indigo-700/70 dark:fill-indigo-700/90"
+      />
       <div>
         <Logo className="w-48 h-40" />
       </div>
       <h1 className="text-4xl font-bold text-center">
-        Hi👋, I&lsquo;m <span className="text-indigo-600">Dheeraj Sharma</span>
+        Hi👋, I&lsquo;m <span className="text-indigo-600 antialiased">Dheeraj Sharma</span>
       </h1>
-      <h2 className="text-lg text-center max-w-[600px]">
+      <h2 className="text-lg text-center max-w-[600px] antialiased">
         I&apos;m a Full Stack Developer with experience in building web
         applications using modern technologies like React, Node.js, and MongoDB.
       </h2>
@@ -22,7 +27,7 @@ export default function Home() {
         <a
           href="https://github.com/greatnerve"
           target="_black"
-          className="rounded-full m-3"
+          className="rounded-full m-3 text-foreground/90 hover:text-foreground transition-all duration-300 ease-in-out"
           aria-label="GitHub"
         >
           <FaGithub />
@@ -30,7 +35,7 @@ export default function Home() {
         <a
           href="https://www.linkedin.com/in/greatnerve/"
           target="_black"
-          className="rounded-full m-3"
+          className="rounded-full m-3 text-foreground/90 hover:text-foreground transition-all duration-300 ease-in-out"
           aria-label="LinkedIn"
         >
           <FaLinkedinIn />
@@ -38,7 +43,7 @@ export default function Home() {
         <a
           href="https://www.instagram.com/greatnerve/"
           target="_black"
-          className="rounded-full m-3"
+          className="rounded-full m-3 text-foreground/90 hover:text-foreground transition-all duration-300 ease-in-out"
           aria-label="Instagram"
         >
           <FaInstagram />

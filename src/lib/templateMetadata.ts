@@ -9,9 +9,6 @@ export const templateMetadata: Metadata = {
     creator: short_name,
     category: "Technology, Web Development",
     metadataBase : BASE_URL,
-    alternates: {
-      canonical: "/",
-    },
     icons: {
       icon: [
         {

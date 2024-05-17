@@ -1,7 +1,7 @@
 
 
 const siteData = {
-    BASE_URL : new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://greatnerve.com"),
+    BASE_URL : new URL(process.env.NEXT_PUBLIC_SERVER || "https://greatnerve.com"),
     name: 'Dherraj Sharma | GreatNerve',
     short_name: 'Dherraj Sharma',
     description: "I'm Dheeraj Sharma, a student at NSUT, Delhi. I am a Full Stack Developer. I am passionate about learning new technologies and building projects.",

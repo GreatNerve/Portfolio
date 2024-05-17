@@ -32,7 +32,7 @@ const ItemCard = ({
   return (
     <Card
       id={slug}
-      className="flex flex-col lg:flex-row gap-1 lg:gap-4 p-4 lg:p-6 items-start lg:items-center lg:justify-center justify-start hover:bg-indigo-600/5 hover:shadow-card-foreground  transition-shadow duration-300 ease-in-out"
+      className="flex flex-col lg:flex-row gap-1 lg:gap-4 p-4 lg:p-6 items-start lg:items-center lg:justify-center justify-start  hover:shadow-card-foreground  transition-all duration-300 ease-in-out bg-gray-100/70 dark:bg-black/20 hover:scale-[1.01] hover:bg-gray-100/50 dark:hover:bg-black/0"
     >
      
       <LinkWrapper
@@ -50,8 +50,8 @@ const ItemCard = ({
       </LinkWrapper>
       <div className="flex-1 w-full flex flex-col">
         <CardHeader>
-        <CardTitle className="text-3xl mt-4 font-bold mb-2 lg:my-0">{name}</CardTitle>
-        <CardDescription className="text-justify font-normal text-base text-card-foreground">{description}</CardDescription>
+        <CardTitle className="text-3xl mt-4 font-bold mb-2 lg:my-0 antialiased">{name}</CardTitle>
+        <CardDescription className="text-justify font-normal text-base text-card-foreground antialiased">{description}</CardDescription>
         </CardHeader>
         <CardContent className="pb-1">
         <p>

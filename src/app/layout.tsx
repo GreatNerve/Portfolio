@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     default: name,
     template: "%s | Dheeraj Sharma",
   },
+  alternates: {
+    canonical: "/",
+  },
   ...templateMetadata,
   
   }

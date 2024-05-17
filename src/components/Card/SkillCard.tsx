@@ -16,7 +16,7 @@ export default function SkillCard({
         <Image
           src={image}
           classNames={{
-            img: "aspect-square select-none object-center	",
+            img: "aspect-square select-none object-center	select-none",
             wrapper:
               "aspect-square",
           }}
@@ -24,6 +24,7 @@ export default function SkillCard({
           width={64}
           radius="full"
           alt={name}
+          loading="lazy"
         />
         <CardTitle className="text-lg font-bold">{name}</CardTitle>
       </CardHeader>

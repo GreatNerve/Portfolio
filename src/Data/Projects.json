@@ -1,6 +1,35 @@
 {
   "data": [
     {
+      "name": "NSUT IIF Website",
+      "image": "https://i.ibb.co/SN8qLwn/Screenshot-2024-04-06-233138.png",
+      "summary": "Built a website for NSUT IIF integrating frontend and backend modern technologies.like  Node.js, Express, MongoDB.",
+      "description": "I contributed to the NSUT IIF Website, leveraging modern technologies like Node.js, Express, and MongoDB. Our collaboration yielded a dynamic, responsive platform showcasing the institute's offerings. With Node.js and Express, we ensured swift server-side operations and seamless routing. MongoDB facilitated efficient data management, enhancing performance. The result is a user-friendly website, empowering visitors with easy access to relevant information about NSUT IIF.",
+      "techStack": [
+        "Node.js",
+        "Express",
+        "MongoDB"
+      ],
+      "status": "Ongoing",
+      "live": "https://nsutiif.in/",
+      "slug": "NSUT-IIF-Website"
+    },
+    {
+      "name": "Food Odering Website",
+      "image": "https://i.ibb.co/ZW8Qr0n/foodyfood2.png",
+      "summary": "Developed a food ordering website with a modern, user-friendly interface, leveraging Next.js for fast load times and optimal performance, and ensuring seamless responsiveness across all devices.",
+      "description": "I designed and developed a responsive, visually appealing food ordering website using Next.js, Tailwind CSS, and shadcn. Leveraging Next.js for server-side rendering and static site generation ensured fast load times and optimal performance. The modern, user-friendly interface provides an intuitive experience, seamlessly accessible across all devices, enhancing the user experience.",
+      "techStack": [
+        "Next.js",
+        "Tailwind CSS",
+        "Ract"
+      ],
+      "status": "Ongoing",
+      "live": "https://foodyfoods.netlify.app/",
+      "git": "https://github.com/GreatNerve/Foody",
+      "slug": "Food-Website"
+    },
+    {
       "name": "Wikipedia Summary",
       "image": "https://i.ibb.co/6ZFPBGS/wikipidia.png",
       "summary": "Built a Wikipedia-like platform for exploring topics with summaries, search suggestions & responsive design.",
@@ -17,27 +46,13 @@
       "slug": "wikipedia-clone"
     },
     {
-      "name": "NSUT IIF Website",
-      "image": "https://i.ibb.co/SN8qLwn/Screenshot-2024-04-06-233138.png",
-      "summary": "Built a website for NSUT IIF integrating frontend and backend modern technologies.like  Node.js, Express, MongoDB.",
-      "description": "I contributed to the NSUT IIF Website, leveraging modern technologies like Node.js, Express, and MongoDB. Our collaboration yielded a dynamic, responsive platform showcasing the institute's offerings. With Node.js and Express, we ensured swift server-side operations and seamless routing. MongoDB facilitated efficient data management, enhancing performance. The result is a user-friendly website, empowering visitors with easy access to relevant information about NSUT IIF.",
-      "techStack": [
-        "Node.js",
-        "Express",
-        "MongoDB"
-      ],
-      "status": "Ongoing",
-      "live": "https://nsutiif.in/",
-      "slug": "NSUT-IIF-Website"
-    },
-    {
       "name": "Mars Image Search",
       "live": "https://greatnerve.github.io/Mars_Image/",
       "image": "https://i.ibb.co/2q81fX6/Screenshot-2024-04-07-001853.png",
       "summary": "Built a Mars image search platform with a responsive design, image grid, and image modal.",
       "description": "Developed a Mars image search platform with a responsive design, image grid, and image modal. Leveraging the NASA API, the platform offers a seamless user experience, enabling users to explore Mars images with ease. The responsive design ensures optimal performance across devices, enhancing accessibility. The image grid and modal facilitate efficient image browsing, empowering users with a visually engaging experience.",
       "techStack": [
-        "JQuery",
+        "jQuery",
         "HTML",
         "CSS",
         "Bootstrap"

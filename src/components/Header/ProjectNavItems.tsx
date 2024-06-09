@@ -14,7 +14,8 @@ import { LegacyRef } from "react";
 
 const ProjectNavItems = forwardRef(function ProjectNavItems({ name }:{name : string}, ref) {
 
-const components = useAppSelector((state) => state.project.data);
+const project = useAppSelector((state) => state.project.data);
+const components = project.slice(0, 4);
 
   return (
     <>

@@ -12,17 +12,13 @@ import Link from "next/link";
 import { Logo } from "@/components";
 import { Menu, X } from "lucide-react";
 import ProjectNavItems from "./ProjectNavItems";
-import ServiceNavItems from "./ServiceNavItems";
 import ThemeButton from "./ThemeButton";
 import { useNavbar } from "./useNavbar";
 
 import { RefObject } from "react";
 
 const NavBar = () => {
- 
- 
-
-  const { isMenuOpen,navRef, servicesRef, projectsRef, handleMenuToggle } = useNavbar();
+  const { isMenuOpen, navRef, projectsRef, handleMenuToggle } = useNavbar();
 
   return (
     <div
@@ -61,24 +57,9 @@ const NavBar = () => {
           >
             <ul className=" md:flex md:static md:flex-grow md:items-center md:justify-start">
               <NavigationMenuItem className=" mx-4 md:mx-1 my-4 md:my-1">
-                <ServiceNavItems ref={servicesRef} name="Services" />
-              </NavigationMenuItem>
-
-              <NavigationMenuItem className=" mx-4 md:mx-1 my-4 md:my-1">
                 <ProjectNavItems ref={projectsRef} name="Projects" />
               </NavigationMenuItem>
 
-              <NavigationMenuItem className=" mx-4 my-4 md:my-1 md:mx-1">
-                <Link
-                  href="/about"
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    "w-full text-lg md:text-base font-medium"
-                  )}
-                >
-                  About
-                </Link>
-              </NavigationMenuItem>
               <NavigationMenuItem className="mx-4 my-4 md:my-1 md:mx-1">
                 <Link
                   href="/contact"

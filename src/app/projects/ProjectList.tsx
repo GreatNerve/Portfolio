@@ -1,9 +1,9 @@
 "use client";
 import { ItemCard } from '@/components';
-import { useAppSelector } from '@/lib/hooks';
+import { PROJECTS_LIST } from '@/constant/project';
 
 function ProjectList() {
-    const data = useAppSelector((state) => state.project.data);
+    const data = PROJECTS_LIST;
     return (
         <div className="container px-4 lg:px-16 my-4 mb-8 grid grid-col-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-8">
         {data?.map((item:any, index : number) => (

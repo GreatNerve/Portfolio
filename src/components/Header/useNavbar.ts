@@ -1,4 +1,3 @@
-
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -6,7 +5,6 @@ const useNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navRef = useRef<HTMLElement>(null);
-  const servicesRef = useRef<HTMLElement>(null);
   const projectsRef = useRef<HTMLElement>(null);
 
   const subMenuToggle = useCallback(function subMenuToggle(ref: any) {
@@ -21,11 +19,10 @@ const useNavbar = () => {
 
   const handleMenuToggle = useCallback(
     (action = "") => {
-      subMenuToggle(servicesRef.current!);
       if (action === "close") return setIsMenuOpen(false);
       setIsMenuOpen(!isMenuOpen);
     },
-    [isMenuOpen, subMenuToggle, servicesRef]
+    [isMenuOpen]
   );
 
   useEffect(() => {
@@ -50,7 +47,7 @@ const useNavbar = () => {
     };
   }, []);
 
-  return { isMenuOpen,navRef, servicesRef, projectsRef, handleMenuToggle };
+  return { isMenuOpen, navRef, projectsRef, handleMenuToggle };
 };
 
 export { useNavbar };

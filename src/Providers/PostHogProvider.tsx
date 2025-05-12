@@ -15,8 +15,6 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
       capture_pageleave: true,
       loaded: (ph) => console.log("PostHog loaded", ph),
     });
-
-    posthog.debug();
   }, []);
 
   return <PHProvider client={posthog}>{children}</PHProvider>;

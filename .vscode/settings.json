@@ -2,6 +2,7 @@
     "cSpell.words": [
         "Dwarka",
         "nextui",
+        "posthog",
         "tailwindcss"
     ],
     "typescript.tsdk": "node_modules\\typescript\\lib"

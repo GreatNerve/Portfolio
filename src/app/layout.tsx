@@ -10,7 +10,9 @@ import dynamic from "next/dynamic";
 import { ReactNode } from "react";
 
 const Footer = dynamic(() => import("@/components/Footer/Footer"))
-
+const PostHogPageView = dynamic(() => import('@/components/posthog/PostHogPageView'), {
+  ssr: false,
+})
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +45,7 @@ export default function RootLayout({
       
       <body className={inter.className}>
         <Providers>
+          <PostHogPageView />
           <NavBar />
           <main className="min-h-[calc(100vh-4rem-1px)] flex flex-col">
             {children}

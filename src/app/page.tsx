@@ -26,9 +26,10 @@ const titleText = [
   },
 ];
 
-const ABOUT_ME = `I am a Full Stack Developer and Electronics & Communication Engineering student at Netaji Subhas University of Technology, Delhi, specializing in building scalable and efficient web applications. With expertise in React, Node.js, and MongoDB, I have developed and deployed robust solutions that enhance user experience and drive business growth.
-Passionate about problem-solving and innovation, I thrive on learning new technologies and continuously refining my skills. I have a strong grasp of data structures and algorithms, making me adept at competitive programming and efficient software development.
-Beyond coding, I have hands-on experience in the software development life cycle, from conceptualization to deployment, ensuring high-quality, maintainable solutions. Whether working independently or as part of a team, I excel in collaboration, adaptability, and tackling complex challenges head-on. Always eager to push boundaries, I am committed to building impactful applications that solve real-world problems. 🚀`;
+const ABOUT_ME = `Hello! I’m Dheeraj Sharma, a third-year Electronics and Communication Engineering student at Netaji Subhas University of Technology (NSUT).
+I currently serve as the Head of Technical Affairs at IEEE NSUT, Tech Co-Head at NSUT IIF, and Web Development Mentor with Google Developer Student Clubs. These roles have given me space to guide, build, and occasionally keep me from falling apart.
+Over time, I’ve grown more drawn to the quieter things — where progress is slow, answers are unclear, and most of it feels unfinished.
+Still here. Still trying. Still not sure what it all means.`;
 
 export default function Home() {
   return (
@@ -45,9 +46,7 @@ export default function Home() {
           <TypingEffect word={titleText} duration={1000} />
         </h1>
         <h2 className="text-lg text-center max-w-[600px] antialiased">
-          I&apos;m a Full Stack Developer with experience in building web
-          applications using modern technologies like React, Node.js, and
-          MongoDB.
+         I make things. Sometimes they work, sometimes they don&lsquo;t. I keep going anyway, hoping it adds up to something.
         </h2>
         <div className="flex gap-2 text-4xl">
           <a

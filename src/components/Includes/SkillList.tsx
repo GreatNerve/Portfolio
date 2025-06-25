@@ -46,6 +46,15 @@ const skills: Skill[] = [
     image: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg",
   },
   {
+    name: "PostgreSQL",
+    image:
+      "https://www.onetrust.com/content/dam/onetrust/brand/content/graphic/thumbnail/integrations/OT-integrations-logo-postgre-sql.png",
+  },
+  {
+    name : "Prisma",
+    image: "https://cdn-1.webcatalog.io/catalog/prisma-data-platform/prisma-data-platform-icon-filled-256.webp?v=1714776724281",
+  },
+  {
     name: "Docker",
     image:
       "https://www.vikingsoftware.com/wp-content/uploads/2024/02/Docker.png",

@@ -13,19 +13,21 @@ export interface IProject {
 export const PROJECTS_LIST: IProject[] = [
   {
     name: "Tool Snitch",
-    image: "https://res.cloudinary.com/greatnerve/image/upload/v1741814869/Screenshot_2025-03-13_025448_vwug1i.png?w=740px",
+    image:
+      "https://res.cloudinary.com/greatnerve/image/upload/v1741814869/Screenshot_2025-03-13_025448_vwug1i?w=740px",
     summary:
       "Collaborated on a B2C platform connecting users with local electronic repair shops, enhancing user connections by 30%.",
     description:
       "Tool Snitch is a platform designed to bridge the gap between customers and local electronic repair shops. I collaborated on this project, contributing to its multi-role access system for users, partners, and administrators. AWS integration ensures high scalability and robust security.",
     techStack: ["AWS", "Next.js", "Node.js", "MongoDB"],
-    status: "Ongoing",
+    status: "Completed",
     live: "https://www.toolsnitch.com/",
     slug: "tool-snitch",
   },
   {
     name: "AnitBot",
-    image: "https://res.cloudinary.com/greatnerve/image/upload/v1741815312/anitbot.webp",
+    image:
+      "https://res.cloudinary.com/greatnerve/image/upload/v1741815312/anitbot",
     summary:
       "WhatsApp bot designed to reduce spam in NSUT groups, achieving a 99% spam reduction.",
     description:
@@ -36,32 +38,34 @@ export const PROJECTS_LIST: IProject[] = [
   },
   {
     name: "NSUT IIF Website",
-    image: "https://res.cloudinary.com/greatnerve/image/upload/v1714813549/Projects/NSUT-IIF-Website.png?w=740px",
+    image:
+      "https://res.cloudinary.com/greatnerve/image/upload/v1714813549/Projects/NSUT-IIF-Website?w=740px",
     summary:
-      "Collaborated on a website for NSUT IIF integrating frontend and backend technologies like Node.js, Express, and MongoDB.",
+      "Built the official website for NSUT IIF, integrating modern frontend and backend technologies to support multi-role access and efficient data flow.",
     description:
-      "As a collaborator on the NSUT IIF website, I contributed to building a responsive platform with Google OAuth integration, multi-level user roles, and optimized performance. The platform effectively showcases the institute's offerings with smooth server-side operations and efficient data management.",
-    techStack: ["Node.js", "Express", "MongoDB", "AWS"],
-    status: "Ongoing",
+      "Built a responsive platform for NSUT IIF with Google OAuth, permission-based access, and server-side caching. Focused on performance, usability, and maintaining a smooth experience across user roles. The site presents the foundation's work while quietly handling the heavy lifting behind the scenes.",
+    techStack: ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+    status: "Completed",
     live: "https://nsutiif.in/",
     slug: "nsut-iif-website",
   },
   {
-    name: "Food Ordering Website",
-    image: "https://res.cloudinary.com/greatnerve/image/upload/v1741815162/foodyfood2_cqebe9.png",
+    name: "AI for Humanity Delhi",
+    image:
+      "https://res.cloudinary.com/greatnerve/image/upload/v1750890663/Projects/ai4humanity_nsut_banner?w=740px",
     summary:
-      "Developed a modern food ordering website with a user-friendly interface and SSR for optimized performance.",
+      "Built and deployed a submission portal for 100+ teams as part of a GenAI-focused event in collaboration with the Embassy of Israel.",
     description:
-      "Built a visually engaging food ordering platform using Next.js and Tailwind CSS. The website supports server-side rendering (SSR) for better performance and responsiveness across devices.",
-    techStack: ["Next.js", "Tailwind CSS", "React"],
-    status: "Ongoing",
-    live: "https://foodyfoods.netlify.app/",
-    git: "https://github.com/GreatNerve/Foody",
-    slug: "food-website",
+      "AI for Humanity Delhi was a campus-wide initiative exploring the responsible use of generative AI. I built and deployed the submission platform under NSUT IIF, enabling over 100 teams to participate. The event was organized in collaboration with the Embassy of Israel, bringing together students, ideas, and important questions worth exploring.",
+    techStack: ["Next.js", "MongoDB", "Tailwind CSS"],
+    status: "Completed",
+    live: "https://ai-summit-nsut.netlify.app/",
+    slug: "ai-for-humanity",
   },
   {
     name: "Wikipedia Summary",
-    image: "https://res.cloudinary.com/greatnerve/image/upload/v1714813548/Projects/Wikipedia-Summary.png?w=740px",
+    image:
+      "https://res.cloudinary.com/greatnerve/image/upload/v1714813548/Projects/Wikipedia-Summary?w=740px",
     summary:
       "Built a Wikipedia-like platform for exploring topics with summaries, search suggestions & responsive design.",
     description:
@@ -75,7 +79,8 @@ export const PROJECTS_LIST: IProject[] = [
   {
     name: "Mars Image Search",
     live: "https://greatnerve.github.io/Mars_Image/",
-    image: "https://res.cloudinary.com/greatnerve/image/upload/v1714813550/Projects/Mars-Image-Search.png",
+    image:
+      "https://res.cloudinary.com/greatnerve/image/upload/v1714813550/Projects/Mars-Image-Search",
     summary:
       "Built a Mars image search platform with a responsive design, image grid, and image modal.",
     description:
@@ -89,7 +94,7 @@ export const PROJECTS_LIST: IProject[] = [
     name: "Robotics & Electronics",
     git: "https://github.com/GreatNerve/Nerve_V1",
     image:
-      "https://res.cloudinary.com/greatnerve/image/upload/v1741815127/Nerve_bbzntu.jpg",
+      "https://res.cloudinary.com/greatnerve/image/upload/v1741815127/Nerve_bbzntu",
     summary:
       "Built multiple Robotics and Electronics projects, including IoT, Embedded Systems, and Automation.",
     description:
@@ -99,4 +104,3 @@ export const PROJECTS_LIST: IProject[] = [
     slug: "robotics-electronics",
   },
 ];
-

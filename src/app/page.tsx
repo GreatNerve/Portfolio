@@ -2,7 +2,6 @@ import { Logo, SkillList } from "@/components";
 import ProjectGrid from "@/components/Includes/HomeProjectGrid";
 import TypingEffect from "@/components/Includes/TextEffect";
 import { Spotlight } from "@/components/ui/Spotlight";
-import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
@@ -75,20 +74,18 @@ export default function Home() {
           </a>
         </div>
         <div className="flex gap-4">
-          <Button
-            as={Link}
+          <Link
             className="rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring"
             href="/projects"
           >
             Projects
-          </Button>
-          <Button
-            as={Link}
+          </Link>
+          <Link
             className="rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring"
             href="/contact"
           >
             Contact
-          </Button>
+          </Link>
         </div>
       </section>
       <section className="container flex flex-col px-8 my-16 md:px-20 gap-4">

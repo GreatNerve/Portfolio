@@ -24,10 +24,10 @@ import { cn } from "@/lib/utils"
 
 
 const FormSchema = z.object({
-  name : z.string().trim().min(1, "Name is required").min(3, "Name is too short").max(50, "Name is too long"),
+  name: z.string().trim().min(1, "Name is required").min(3, "Name is too short").max(50, "Name is too long"),
   email: z.string().email("Invalid email").min(1, "Email is required"),
   message: z.string().trim().min(1, "Message is required").min(10, "Message is too short").max(500, "Message is too long"),
-  tnc : z.boolean().default(false).refine(value => value === true, { message: "Please agree to the terms and conditions" }),
+  tnc: z.boolean().refine((value) => value === true, { message: "Please agree to the terms and conditions" }),
 })
 
 export function ContactForm(props : HTMLAttributes<HTMLFormElement>) {

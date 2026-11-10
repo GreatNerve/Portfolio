@@ -8,11 +8,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
 import { ReactNode } from "react";
+import PostHogPageView from "@/components/posthog/PostHogPageView";
 
-const Footer = dynamic(() => import("@/components/Footer/Footer"))
-const PostHogPageView = dynamic(() => import('@/components/posthog/PostHogPageView'), {
-  ssr: false,
-})
+const Footer = dynamic(() => import("@/components/Footer/Footer"));
 
 const inter = Inter({ subsets: ["latin"] });
 
